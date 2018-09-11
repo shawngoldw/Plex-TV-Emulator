@@ -34,8 +34,8 @@
 # The title of your channel should be unique and as explanatory as possible.  The preifx is used for the channel
 # store and shows you where the channel is executed in the log files
 
-TITLE    = 'TV Emulator'
-PREFIX   = '/video/TVEmulator'
+TITLE    = 'Channel Title'
+PREFIX   = '/video/channelname'
 
 # The images below are the default graphic for your channel and should be saved or located in you Resources folder
 # The art and icon should be a certain size for channel submission. The graphics should be good quality and not be blurry
@@ -182,7 +182,7 @@ def VideoRSS(title):
 def ShowHTML(title):
 
 
-# The parsing API is followed by .xpath(ï¿½//PARENTELEMENTï¿½): where PARENTELEMENT is the parent element within the XML document for  
+# The parsing API is followed by .xpath(Ô//PARENTELEMENTÕ): where PARENTELEMENT is the parent element within the XML document for  
 # which you want to return data values to the variables for the videos. For example each video in your RSS feed may be contained 
 # within an Item element tag that has element tags for title, thumbnail, description, etc.
 
@@ -207,11 +207,11 @@ def ShowHTML(title):
 
 # SEE THE LINKS AT THE TOP FOR MORE DETAILED INFO ON XPATH 
 # We are using xpath to get of all the values for each element with the parent element returned by the variable video 
-# the syntax is: video.xpath (ï¿½./CHILDELEMENTï¿½)[FIRSTVALUE].FORMAT or video.xpath (ï¿½./CHILDELEMENT/FORMATï¿½)[FIRSTVALUE]
+# the syntax is: video.xpath (Ô./CHILDELEMENTÕ)[FIRSTVALUE].FORMAT or video.xpath (Ô./CHILDELEMENT/FORMATÕ)[FIRSTVALUE]
 # where CHILDELEMENT is the xpath commands that gets us to the location of the data in the child element ( ex. title, url, date),
 # FIRSTVALUE is the first occurrence of the child element. Usually you want to get all occurences of the child element for 
 # each parent element so we give this a value of [0] (Python starts the count at zero), and FORMAT defines whether we want 
-# to return the data contained in the element as text or as an attribute.  The syntax is are .text or .get(ï¿½ATTRIBUTEï¿½) 
+# to return the data contained in the element as text or as an attribute.  The syntax is are .text or .get(ÔATTRIBUTEÕ) 
 # or //text() and //@ATTRIBUTE when attached to the child element xpath where ATTRIBUTE is the name of the attribute 
 # you want to return ex. //@href or .get(href) to return the anchor attribute href="www.domainname.com/file.htm"
 
