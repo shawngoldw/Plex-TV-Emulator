@@ -1,5 +1,5 @@
-TITLE    = 'Channel Title'
-PREFIX   = '/video/TVEmulator'
+TITLE    = 'TV Emulator'
+PREFIX   = '/video/tvemulator'
 
 ART      = 'art-default.jpg'
 ICON     = 'icon-default.png'
