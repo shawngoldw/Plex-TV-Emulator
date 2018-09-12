@@ -4,9 +4,9 @@
 <dict>
         <!-- IMPORTANT NOTE. IF THERE ARE MULTIPLE VALUES FOR A KEY, THEN EACH VALUE SHOULD BE SEPARATED BY A COMMA IN ONE STRING  -->    
         <!-- EXCEPT IF THE KEY HAS <array></array> CODE WITHIN IT.  THEN EACH VALUE FOR THAT KEY MUST BE ENTERED AS A SEPARATE STRING WITHIN THAT ARRAY -->    
-        <key>CFBundleIdentifier</key>
+        <key>com.plexTVEmulator.hickdev</key>
             <!-- Unique PMS identifier for the plugin and its logs.  Format should always be com.plexapp.plugins.<nameofyourplugin> with no capital letters, spaces, or special characters -->
-            <string>com.plexapp.plugins.yourchannelname</string>
+            <string>com.plexapp.plugins.tvemulator</string>
         <key>PlexFrameworkVersion</key>
             <!-- Version should always be set to 2 -->        
             <string>2</string>
